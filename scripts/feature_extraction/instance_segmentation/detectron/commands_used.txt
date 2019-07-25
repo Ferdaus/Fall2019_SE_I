@@ -1,0 +1,92 @@
+
+Detectron
+
+/disks/data/paper_projects/selfie_detection/scripts/third_party/instance_segmentation__detectron/detectron
+
+Mask:
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml \
+    --output-dir output/mirror_selfie__confirmed_224x224_July22nd \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.SgT4y1cO/output/train/coco_2014_train:coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/mirror_selfie__confirmed_224x224_July22nd
+
+Keypoints:
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_keypoint_rcnn_X-101-32x8d-FPN_s1x.yaml \
+    --output-dir output/selfie__confirmed_224x224_maskRCNN_skeleton \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/37732318/12_2017_baselines/e2e_keypoint_rcnn_X-101-32x8d-FPN_s1x.yaml.16_55_09.Lx8H5JVu/output/train/keypoints_coco_2014_train%3Akeypoints_coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/selfie__confirmed_224x224
+
+
+
+Keypoints again:
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_keypoint_rcnn_X-101-32x8d-FPN_s1x.yaml \
+    --output-dir output/July22nd/mirror_selfie__confirmed_224x224_July22nd \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/37732318/12_2017_baselines/e2e_keypoint_rcnn_X-101-32x8d-FPN_s1x.yaml.16_55_09.Lx8H5JVu/output/train/keypoints_coco_2014_train%3Akeypoints_coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/July22nd/mirror_selfie__confirmed_224x224_July22nd
+
+
+_____________________________________________
+_____________________________________________
+
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml \
+    --output-dir output/selfie__confirmed_224x224_maskRCNN \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.SgT4y1cO/output/train/coco_2014_train:coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/selfie__confirmed_224x224
+
+
+
+https://github.com/facebookresearch/Detectron/issues/840
+
+
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml \
+    --output-dir output/selected_imgs \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.SgT4y1cO/output/train/coco_2014_train:coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/selfie_selected
+
+
+_____________________________________________
+
+
+
+
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_keypoint_rcnn_R-101-FPN_s1x.yaml \
+    --output-dir output/selected_imgs \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/37698009/12_2017_baselines/e2e_keypoint_rcnn_R-101-FPN_s1x.yaml.08_45_57.YkrJgP6O/output/train/keypoints_coco_2014_train%3Akeypoints_coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/selfie_selected
+
+python tools/infer_simple.py \
+    --cfg configs/12_2017_baselines/e2e_keypoint_rcnn_X-101-32x8d-FPN_s1x.yaml \
+    --output-dir output/selfie__confirmed_224x224_maskRCNN_skeleton \
+    --image-ext jpg \
+    --output-ext jpg \
+    --wts https://dl.fbaipublicfiles.com/detectron/37732318/12_2017_baselines/e2e_keypoint_rcnn_X-101-32x8d-FPN_s1x.yaml.16_55_09.Lx8H5JVu/output/train/keypoints_coco_2014_train%3Akeypoints_coco_2014_valminusminival/generalized_rcnn/model_final.pkl \
+    images/selfie__confirmed_224x224
+
+
+
+
+
+
